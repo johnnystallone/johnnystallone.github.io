@@ -13,18 +13,18 @@
         js.id = id;
         js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'Messenger'));
+    }(document, 'script', 'Messenger'));</script>
 
-
+    <script>
     MessengerExtensions.getUserID(function success(uids) {
   	// User ID was successfully obtained. 
       	var psid = uids.psid;
   
     }, function error(err, errorMessage) {      
   	// Error handling code
-    });    
+    });</script>
 
-    
+    <script>
     window.extAsyncInit = () => {
         // TODO: How to parse env file from here?
         MessengerExtensions.getSupportedFeatures(function success(result) {
