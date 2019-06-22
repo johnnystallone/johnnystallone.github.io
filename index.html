@@ -15,7 +15,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'Messenger'));
 
-    <script>
+
     MessengerExtensions.getUserID(function success(uids) {
   	// User ID was successfully obtained. 
       	var psid = uids.psid;
@@ -23,7 +23,7 @@
     }, function error(err, errorMessage) {      
   	// Error handling code
     });    
-</script>
+
     
     window.extAsyncInit = () => {
         // TODO: How to parse env file from here?
