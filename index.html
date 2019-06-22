@@ -13,9 +13,8 @@
         js.id = id;
         js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'Messenger'));</script>
+    }(document, 'script', 'Messenger'));
 
-    <script>
     window.extAsyncInit = () => {
         // TODO: How to parse env file from here?
         MessengerExtensions.getSupportedFeatures(function success(result) {
@@ -37,16 +36,16 @@
             console.log(err);
         });
         document.getElementById('submitButton').addEventListener('click', () => {
-           MessengerExtensions.requestCloseBrowser(function success() {
-               console.log("Webview closing");
+            MessengerExtensions.requestCloseBrowser(function success() {
+                console.log("Webview closing");
             }, function error(err) {
-               console.log(err);
-           });
+                console.log(err);
+            });
         });
     };
 
 </script>
-<form action="https://hook.integromat.com/2ztnvtwhlmiyyhhumldlcc6eeyf6cdre" method="post">
+<form action="/optionspostback" method="get">
     <input type="hidden" name="psid" id="psid">
     <h3>Pillows</h3>
     <input type="radio" name="pillows" value="soft" checked>Soft<br>
