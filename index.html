@@ -36,7 +36,7 @@
             // error retrieving supported features
             console.log(err);
         });
-        document.getElementById('submitButton').addEventListener('click', () => {
+        document.getElementById('submitButto').addEventListener('click', () => {
             MessengerExtensions.requestCloseBrowser(function success() {
                 console.log("Webview closing");
             }, function error(err) {
