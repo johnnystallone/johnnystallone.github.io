@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 9% 7%;
+    align-items: center;
+}
+
+.confirm-button {
+    background-color: blueviolet;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    max-width: 100%;;
+    width: 100%;
+}
+
+.prod-search {
+    max-width: 100%;
+    width: 100%;
+}
+
+.img-ss {
+    width: 100%;
+    height: auto;
+}
